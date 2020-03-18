@@ -7,119 +7,38 @@
    :width: 1em
 
 **********************
-Apache Tomcat
+Schema Backups
 **********************
 
 .. contents:: Table of Contents
 
-Layout
-======
+Backup Manager
+==============
 
-For installations done using the Wizard, the Apache Tomcat (CATALINA) home directory is::
-
-   /home/tomcat/apache-tomcat-v/
+The Backup Manager tab allows you to create, edit, and delete scheduled schema backup.
    
-Where apache-tomcat-v is the version you chose to install.
+      .. image:: _static/backups.png
 
-The CATALINA_HOME variable is set both in the Tomcat init script as well as setenv.sh files.
+   
+Create Backup
+=============
 
+To create a new schema backup, enter the backup name and click create.
 
-JRI File Locations
-==================
+A template will be created and you just need to simply fill in the schema/password and FTP or offsite information.
 
-For JasperReportsIntegration layout and customization options, please see the Jasper section below.
-
-
-Starting and Stopping
-=====================
-
-There are two ways to start/stop/restart Tomcat.
-
-1.  Via Module, using the Stop/Start/Restart buttons as shown below::
-
-   .. image:: _static/tomcat-tab.gif
-
-2.  Via SSH, using the following commands
-
-.. code-block:: console
-   :linenos:
-
-    /etc/init.d/tomcat { start | stop | restart | status }
-
-
-Init Script
+Edit Backup
 ===========
 
-The Tomcat init script is located in /etc/init.d and has the following content.
+To edit a backup, select the script from the drop down.
 
-.. code-block:: bash
-   :linenos:
-
+Make the required edits and click Save.
 
 
-	#!/bin/bash
-	### BEGIN INIT INFO
-	# Provides:        tomcat
-	# Required-Start:  $network
-	# Required-Stop:   $network
-	# Default-Start:   2 3 4 5
-	# Default-Stop:    0 1 6
-	# Short-Description: Start/Stop Tomcat server
-	### END INIT INFO
+Backup Location
+===============
 
-	# Source function library.
-	. /etc/environment;	#Catalina variables
-	. $CATALINA_HOME/bin/setenv.sh
-
-	RETVAL=$?
-
-	function start(){
-	echo "Starting Tomcat"
-	/bin/su - tomcat $CATALINA_HOME/bin/startup.sh
-	RETVAL=$?
-	}
-
-	function stop(){
-	echo "Stopping Tomcat"
-	/bin/su - tomcat -c "$CATALINA_HOME/bin/shutdown.sh 60 -force"
-	RETVAL=$?
-	}
-
-	case "$1" in
- 	start)
-		start;
-        ;;
- 	stop)
-		stop;
-        ;;
- 	restart)
-		echo "Restarting Tomcat"
-    	stop;
-		start;
-        ;;
- 	status)
-
-		if [ -f "${CATALINA_PID}" ]; then
-			TOMCAT_PID=$(cat "${CATALINA_PID}")
-			echo "Tomcat is running with PID ${TOMCAT_PID}";
-			RETVAL=1
-		else
-			echo "Tomcat is not running";
-			RETVAL=0
-		fi
-		;;
- 	*)
-        echo $"Usage: $0 {start|stop|restart|status}"
-        exit 1
-        ;;
-	esac
-	exit $RETVAL
+By default, backups are saved to /opt/oracle/admin/XE/dpdump unless otherwise specified.
 
 
-
-
-Version
-=======
-
-JRI Publisher has been tested with Tomcat 9.x
 
