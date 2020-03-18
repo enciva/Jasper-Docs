@@ -7,50 +7,43 @@
    :width: 1em
 
 **********************
-Apache Tomcat
+Oracle XE
 **********************
 
 .. contents:: Table of Contents
 
-Layout
-======
+Controls
+========
 
-For installations done using the Wizard, the Apache Tomcat (CATALINA) home directory is::
+Oracle XE can be started and stopped via Servers > Tomcat XE
 
-   /home/tomcat/apache-tomcat-v/
-   
-Where apache-tomcat-v is the version you chose to install.
+.. image:: _static/tomcat-tab.gif
 
-The CATALINA_HOME variable is set both in the Tomcat init script as well as setenv.sh files.
+Command Line
+=============
 
+To start/stop/restart Oracle XE via command line.
 
-JRI File Locations
-==================
+1.  Connect to SQLPlus::
 
-For JasperReportsIntegration layout and customization options, please see the Jasper section below.
+   .. code-block:: console
+   :linenos:
 
+    sqlplus /nolog
+    connect sys/PASSWORD as sysdba
 
-Starting and Stopping
-=====================
-
-There are two ways to start/stop/restart Tomcat.
-
-1.  Via Module, using the Stop/Start/Restart buttons as shown below::
-
-   .. image:: _static/tomcat-tab.gif
-
-2.  Via SSH, using the following commands
+2.  Issue the start/stop commands
 
 .. code-block:: console
    :linenos:
 
-    /etc/init.d/tomcat { start | stop | restart | status }
+    startup | shutdown | shutdown abort | startup nomount | startup mount
 
 
 Init Script
 ===========
 
-The Tomcat init script is located in /etc/init.d and has the following content.
+The XE init script is located in /etc/init.d and has the following content.
 
 .. code-block:: bash
    :linenos:
@@ -121,5 +114,5 @@ The Tomcat init script is located in /etc/init.d and has the following content.
 Version
 =======
 
-JRI Publisher has been tested with Tomcat 9.x
+XE Version is 18c
 
