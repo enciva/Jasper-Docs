@@ -12,17 +12,39 @@ Apache Tomcat
 
 .. contents:: Table of Contents
 
+Usage
+=====
+
+Apache Tomcat is used as the container for Oracle ORDS as well as JRI Publisher.
+
+Stop/Starting/Restarting will restart both the APEX and JRI services.
+
 Layout
 ======
 
-For installations done using the Wizard, the Apache Tomcat (CATALINA) home directory is::
+The Apache Tomcat (CATALINA) home directory is::
 
    /home/tomcat/apache-tomcat-v/
    
-Where apache-tomcat-v is the version you chose to install.
+Where apache-tomcat-v is the version installed.
 
 The CATALINA_HOME variable is set both in the Tomcat init script as well as setenv.sh files.
 
+ORDS File Locations
+===================
+
+ORDS is deploy as a war file under::
+
+	/home/tomcat/apache-tomcat-v/webapps/ords
+	
+APEX Image Folder
+=================
+
+The APEX image directory (/i/) is deploy under::
+
+	/home/tomcat/apache-tomcat-v/webapps/i
+	
+This is the location you would use for deploying static and custom content.
 
 JRI File Locations
 ==================
@@ -121,5 +143,5 @@ The Tomcat init script is located in /etc/init.d and has the following content.
 Version
 =======
 
-JRI Publisher has been tested with Tomcat 9.x
+Currently, it is deployed with the latest stable version of Tomcat 9.x
 
