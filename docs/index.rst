@@ -1,48 +1,41 @@
 JRI Publisher
 ==================================================
 
+.. image:: _static/JRI-Publisher-Main-Page.png
+
+
 .. include:: ../README.rst
 
 .. toctree::
-   :caption: JRI Publisher
+   :caption: Getting Started
    :maxdepth: 2
 
    intro
    installing
    wizard
-   
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   contributing
+   webmin
    
 .. toctree::
     :maxdepth: 3
     :caption: Components
 
-    components/general/format
-    components/tomcat/format
-    components/datasources/format
-    components/publish/format
-    components/schedule/format
-    components/reports/format
+    components/general/index
+    components/tomcat/index
+    components/datasources/index
+    components/publish/index
+    components/schedule/index
+    components/reports/index
+    components/jasper/index
 
 .. toctree::
-    :maxdepth: 3
-    :caption: Tutorials
+    :maxdepth: 2
+    :caption: Resources
 
-    tutorials/demo/format
-    tutorials/oracle/format 
-    
-.. toctree::
-    :maxdepth: 3
-    :caption: Security
-
-    security/firewall/format
-    security/iptables/format
-    security/login/format 
+    resources/css
+    resources/security
+    resources/support
+    resources/commercial
+    resources/license
     
     
     

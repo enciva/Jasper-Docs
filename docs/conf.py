@@ -51,7 +51,7 @@ html_theme_options = {
     'display_version': True
 }
 html_theme_path = ["_themes", ]
-html_logo = "demo/static/logo-wordmark-light.svg"
+html_logo = "_static/jri-publihser-top-icon.fw.png"
 html_show_sourcelink = True
 
 htmlhelp_basename = slug

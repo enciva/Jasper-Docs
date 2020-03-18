@@ -4,21 +4,35 @@ Intro
 Overview
 ------------
 
-JRI Publisher installs and configures Tomcat, Java, and JasperReportsIntegration.  
+JRI Publisher is a Webmin module that installs, configures, and manages Tomcat, Java, and `JasperReportsIntegration`_
 
-It also provides a module for Publishing, Scheduling, and Managing Reports. ::
+.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/ 
+
+It also provides Publishing, Scheduling, and Report Management.
+
+It can be used with or without Oracle APEX.
+
+.. image:: _static/JRI-Publisher-Main.png
+
+
+Use Cases
+------------
+* Those looking to get up and running quickly and easily with `JasperReportsIntegration`_
+.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/ 
+* Those looking for the advanced functionality JRI Publisher adds to  `JasperReportsIntegration`_ (UI, Scheduling, and Dashboard)
+.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/  
+* **Non-APEX** Oracle users who want a Jasper reporting solution.   While  `JasperReportsIntegration`_ was designed for Oracle APEX (and can be used with Oracle APEX), JRI Publisher does **not** require APEX or installing the JRI SQL objects.
+.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/  
 
 
 System Requirements
 -------------------
-CentOS 8
-
-Ubuntu 18
-
-Webmin
-
-Postfix
-
+* CentOS 8 or 
+* Ubuntu 18
+* Webmin
+* Postfix
+* 1 GB Ram
+* 10 GB SSD
 
 Authors
 -------
@@ -33,13 +47,32 @@ Authors
 Components
 ----------
 
-http://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/
+`JasperReportsIntegration`_
 
-https://community.jaspersoft.com/project/jasperreports-library
+.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/ 
 
-http://tomcat.apache.org/
+`Jasper Reports Library`_
 
-https://openjdk.java.net/
+.. _`Jasper Reports Library`: https://community.jaspersoft.com/project/jasperreports-library 
+
+`Apache Tomcat`_
+
+.. _`Apache Tomcat`: http://tomcat.apache.org/ 
+
+`OpenJDK`_
+
+.. _`OpenJDK`: https://openjdk.java.net/
+ 
+
+
+Open Source
+-----------
+
+JRI Publisher is Free, Open Source Software.
+
+GNU GENERAL PUBLIC LICENSE v3
+
+
 
     
 
