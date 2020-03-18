@@ -1,7 +1,7 @@
 Enciva XE Docs
 ==================================================
 
-.. image:: _static/xe-docs.png
+.. image:: _static/enciva-main.fw.png
 
 
 .. include:: ../README.rst
