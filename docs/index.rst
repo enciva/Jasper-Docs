@@ -1,4 +1,4 @@
-JRI Publisher
+Enciva JRI Publisher
 ==================================================
 
 .. image:: _static/JRI-Publisher-Main-Page.png
@@ -11,8 +11,6 @@ JRI Publisher
    :maxdepth: 2
 
    intro
-   installing
-   wizard
    webmin
    
 .. toctree::
@@ -20,6 +18,8 @@ JRI Publisher
     :caption: Components
 
     components/general/index
+    components/xe/index
+    components/backups/index
     components/tomcat/index
     components/datasources/index
     components/publish/index
