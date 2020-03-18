@@ -4,48 +4,45 @@ Intro
 Overview
 ------------
 
-JRI Publisher is a Webmin module that installs, configures, and manages Tomcat, Java, and `JasperReportsIntegration`_
+Enciva XE is a Webmin module that manages Oracle XE, Apex, Tomcat, Java, and `JasperReportsIntegration`_
 
 .. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/ 
 
-It also provides Publishing, Scheduling, and Report Management.
-
-It can be used with or without Oracle APEX.
+It also provides Backups, Report Publishing, Report Scheduling, and Report Management.
 
 .. image:: _static/JRI-Publisher-Main.png
 
 
-Use Cases
-------------
-* Those looking to get up and running quickly and easily with `JasperReportsIntegration`_
-.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/ 
-* Those looking for the advanced functionality JRI Publisher adds to  `JasperReportsIntegration`_ (UI, Scheduling, and Dashboard)
-.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/  
-* **Non-APEX** Oracle users who want a Jasper reporting solution.   While  `JasperReportsIntegration`_ was designed for Oracle APEX (and can be used with Oracle APEX), JRI Publisher does **not** require APEX or installing the JRI SQL objects.
-.. _`JasperReportsIntegration`: https://www.opal-consulting.de/downloads/free_tools/JasperReportsIntegration/  
+Operating Systems
+-----------------
+* CentOS 7
+* OEL 7
 
-
-System Requirements
--------------------
-* CentOS 8 or 
-* Ubuntu 18
-* Webmin
-* Postfix
-* 1 GB Ram
-* 10 GB SSD
 
 Authors
 -------
 * `David Ghedini`_
-* `Kaloyan Petrov`_
+
 
 .. _`David Ghedini`: https://github.com/DavidGhedini
-.. _`Kaloyan Petrov`: https://github.com/kaloyan13
+
 
 
 
 Components
 ----------
+
+`Oracle XE`_
+
+.. _`Oracle XE`: https://www.oracle.com/database/technologies/appdev/xe.html
+
+`Oracle APEX`_
+
+.. _`Oracle APEX`: https://apex.oracle.com/en/ 
+
+`Oracle ORDS`_
+
+.. _`Oracle ORDS`: https://www.oracle.com/database/technologies/appdev/rest.html 
 
 `JasperReportsIntegration`_
 
@@ -65,14 +62,5 @@ Components
  
 
 
-Open Source
------------
-
-JRI Publisher is Free, Open Source Software.
-
-GNU GENERAL PUBLIC LICENSE v3
-
-
-
-    
+   
 
