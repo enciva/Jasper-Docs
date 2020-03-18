@@ -1,7 +1,7 @@
-Enciva JRI Publisher
+Enciva XE Docs
 ==================================================
 
-.. image:: _static/JRI-Publisher-Main-Page.png
+.. image:: _static/xe-docs.png
 
 
 .. include:: ../README.rst
