@@ -15,7 +15,15 @@ Schema Backups
 Backup Manager
 ==============
 
-The Backup Manager tab allows you to create, edit, and delete scheduled schema backup.
+To access the Schema Backups Manager, click the Backups icon as show below.
+
+      .. image:: _static/backups-tab.png
+      
+Layout
+==============
+
+
+The Backup Manager tab allows you to create, edit, and delete scheduled schema backups.
    
       .. image:: _static/backups.png
 
