@@ -34,8 +34,7 @@ Enciva XE Docs
     resources/css
     resources/security
     resources/support
-    resources/commercial
-    resources/license
+
     
     
     
