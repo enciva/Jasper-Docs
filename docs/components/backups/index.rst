@@ -49,4 +49,75 @@ Backup Location
 By default, backups are saved to /opt/oracle/admin/XE/dpdump unless otherwise specified.
 
 
+Scheduling Backups
+==================
+
+Backups can be scheduled with a variety of options via the Schedule tab as shown below:
+
+.. image:: _static/schedule-tab.png
+
+On the main Schedule page, click the Add tab to open the Create Schedule page as shown below.  
+
+.. image:: _static/xe-schedule.png
+
+Scheduling Options
+==================
+
+The Schedule module offers the following options.
+
+**Execute**::
+
+   Options:
+      now
+      custom
+      hourly
+      weekly
+      monthly
+      
+now:  This will run the Backup immediately, with no subsequent runs.
+
+custom: This option allows you to enter a custom cron for running the Backups
+ 
+hourly, weekly, and monthly are as stated.
+ 
+**Name**::
+
+   Options:
+      Drop-down list of all available Backups
+
+
+The Name field will display a list of all available Backup scripts.  
+
+Above, we have select the DemoScript.sh we created earlier.
+
+
+**File Name**::
+
+   Options:
+      Set in backup.sh file
+
+Enter the desired Data Source for the report.
+
+
+**Email**::
+
+   Options:
+      Set in backup.sh file
+
+.. note::
+    All options are set within your backup.sh file
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
 
