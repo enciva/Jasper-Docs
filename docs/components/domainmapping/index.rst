@@ -29,6 +29,9 @@ Give your file a name that will make it easy to identify, such as mydomain.conf
    
       .. image:: _static/domainmap-conf.png
       
+
+Click the Create button.
+      
 The Create button will load the template below.
 
       .. image:: _static/domainmap-created.png
