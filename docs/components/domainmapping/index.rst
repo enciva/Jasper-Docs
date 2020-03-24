@@ -17,7 +17,7 @@ Map a Domain
 
 To access the Domain Mapping manager, click the Map Domain icon as show below.
 
-      .. image:: _static/mapdomain-tab.png
+      .. image:: _static/domainmap-tab.png
       
 Create Conf File
 =====================
@@ -25,11 +25,13 @@ Create Conf File
 
 Enter a new filename.conf and click the Create button.
 
-Give your file a name that will make it easy to identify, such as domain.conf
+Give your file a name that will make it easy to identify, such as mydomain.conf
    
-      .. image:: _static/mapdomainscreen.png
+      .. image:: _static/domainmap-conf.png
       
 The Create button will load the template below.
+
+      .. image:: _static/domainmap-created.png
 
 The template is commented.
 
@@ -102,3 +104,7 @@ Conf Location
 ===============
 
 By default, all conf files are saved to /etc/httpd/conf.d
+
+      .. image:: _static/domainmap-conf-location.png
+      
+
