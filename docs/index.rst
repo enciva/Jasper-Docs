@@ -20,6 +20,7 @@ Enciva XE Docs
     components/general/index
     components/xe/index
     components/backups/index
+    components/domainmapping/index
     components/tomcat/index
     components/datasources/index
     components/publish/index
